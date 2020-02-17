@@ -12,12 +12,8 @@ function paintBackground() {
 	css.appendChild(style);
 }
 
-color1.addEventListener("input", function() {
-	paintBackground();
-})
+color1.addEventListener("input", paintBackground)
 
-color2.addEventListener("input", function() {
-	paintBackground();
-})
+color2.addEventListener("input", paintBackground)
 
 
