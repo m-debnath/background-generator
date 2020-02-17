@@ -6,10 +6,7 @@ var body = document.getElementById("gradient");
 function paintBackground() {
 	body.style.background = "linear-gradient(to right, " + color1.value + " , " + color2.value + ")";
 	var style = document.createTextNode("background: linear-gradient(to right, " + color1.value + " , " + color2.value + ");");
-	while (css.hasChildNodes()) {  
-		css.removeChild(css.firstChild);
-	}
-	css.appendChild(style);
+	css.textContent = "background: " + body.style.background + ";"
 }
 
 color1.addEventListener("input", paintBackground)
