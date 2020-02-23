@@ -9,8 +9,6 @@ function paintBackground() {
 	css.textContent = "background: " + body.style.background + ";"
 }
 
-color1.addEventListener("input", paintBackground)
+color1.addEventListener("input", paintBackground);
 
-color2.addEventListener("input", paintBackground)
-
-
+color2.addEventListener("input", paintBackground);
